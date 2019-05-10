@@ -90,7 +90,7 @@ git merge origin/core
     broke the program. We should have tested it before committing.
     However, you also know there is a git command to UNDO this commit. 
     What is a _single_ git command to undo the commit above? **(1 point)**
-
+git revert HEAD
         YOUR ANSWER GOES HERE
 
 12. You have now decided to work on your own new project. You are currently in 
@@ -103,7 +103,7 @@ git merge origin/core
     You decide you want to use git for version control on your project, what is 
     the command to initialize your current directory into a new git repository?
     **(1 point)**
-
+git init
         YOUR ANSWER GOES HERE
 
 13. You decide you want to host your repository on Github. You create a new 
@@ -111,26 +111,26 @@ git merge origin/core
     remote URL of `https://github.com/Gary/get_this_bread.git`. What is a
     command to link your local repository with your new remote repository? Name
     this remote repository `my_new_remote`. **(1 point)**
-
+git remote add my_new_remote https://github.com/Gary/get_this_bread.git
         YOUR ANSWER GOES HERE
 
 14. You realize the name `my_new_remote` is a strange name for a remote repo, 
     and you decide you want to rename it to `origin`. What is a single command
     to rename your remote from `my_new_remote` to `origin`? **(1 point)**
-        
+git remote rename my_new_remote origin        
         YOUR ANSWER GOES HERE
 
 15. You have created a `README.md` for your project and decide you want to add 
     it to your remote repository, first we must add the file to the staging
     area. What is a command to add the file `README.md` to the staging area?
     **(1 point)**
-        
+git add README.md        
         YOUR ANSWER GOES HERE
 
 16. Excellent! You decide you are ready to make your first commit, what is a 
     single command to make a commit with the commit message of `added a
     README`? **(1 point)**
-
+git commit -m "added a README"
         YOUR ANSWER GOES HERE
 
 17. Lastly, you are satisfied with your changes and you decide you want to push 
@@ -138,18 +138,18 @@ git merge origin/core
     The branch we want to push to is the master branch. What is one command to
     push your commit to the master branch of your remote repository named
     `origin`? **(1 point)**
-
+git push origin master
         YOUR ANSWER GOES HERE
 
 18. We now want to tag the current commit as `final` so that we can refer to it
     easily in the future. What is one command that will set the tag for the
     current commit as `final`? **(1 point)**
-    
+git tag final    
         YOUR ANSWER GOES HERE
 
 19. What is one command that will list all the available tags for the current
     git repository? **(1 point)**
-
+git tag
         YOUR ANSWER GOES HERE
 
 20. Which directory stores all the data necessary for git to keep track of your
@@ -160,7 +160,7 @@ git merge origin/core
     * .vimrc  
     * .gitlogs  
     * .gitrc  
-
+.git
           YOUR ANSWER GOES HERE
 
 ## Turnin Procedure:
